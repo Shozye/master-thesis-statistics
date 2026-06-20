@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experiment Idea",
+  "description": "Required markdown headers for experiment-idea.md files",
+  "type": "object",
+  "required": ["headers"],
+  "properties": {
+    "headers": {
+      "type": "array",
+      "description": "Required markdown headers that must appear in the file",
+      "items": {
+        "type": "string"
+      },
+      "const": [
+        "# Idea eksperymentu",
+        "## Cel",
+        "## Co pokazuje wykres",
+        "## Oczekiwany wniosek",
+        "# Output",
+        "## Ile subplotów",
+        "## Rozkład subplotów (rzędy x kolumny)",
+        "## Osie",
+        "## Legenda"
+      ]
+    }
+  }
+}

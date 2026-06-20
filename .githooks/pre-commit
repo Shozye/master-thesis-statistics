@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+cd "$(git rev-parse --show-toplevel)"
+
+# Validate frontmatter of staged experiment.py files only.
+# create_figure.py and data_for_figure_dataclass.py carry no frontmatter by contract.
+files=$(git diff --cached --name-only --diff-filter=ACM -- 'experiments/*/*/*.py' | grep -E '/experiment\.py$' || true)
+if [[ -n "${files}" ]]; then
+    echo "[pre-commit] Validating experiment frontmatter..."
+    python3 scripts/validate_frontmatter.py validate schema/experiment_py_frontmatter_yaml_schema.json ${files}
+fi
+
+echo "[pre-commit] Regenerating experiments index.json..."
+scripts/regenerate_index.sh
+git add index.json

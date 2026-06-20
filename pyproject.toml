@@ -1,0 +1,21 @@
+[project]
+name = "master-thesis-statistics"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "jsonschema",
+    "matplotlib==3.11.0",
+    "mpmath",
+    "numpy",
+    "pandas",
+    "pyyaml",
+    "tabulate",
+    "tqdm",
+    "scipy",
+]
+
+[tool.setuptools]
+py-modules = ["generated_output_manager"]
+
+[tool.setuptools.packages.find]
+exclude = ["experiments*", "generated_output*"]

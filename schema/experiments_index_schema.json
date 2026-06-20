@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experiments Index",
+  "description": "Schema for index.json in submodule-statistics",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["path", "description"],
+    "additionalProperties": false,
+    "properties": {
+      "path": { "type": "string", "description": "Relative path to the experiment script (chapter, section and script filename are all derivable from it)" },
+      "description": { "type": "string", "minLength": 50, "maxLength": 200, "description": "From experiment.py frontmatter. Used as index entry." }
+    }
+  }
+}

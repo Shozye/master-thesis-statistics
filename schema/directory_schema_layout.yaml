@@ -1,0 +1,36 @@
+# Directory schema for experiments/
+# Validated by scripts/validate_directory_schema.py
+#
+# Structure:
+#   experiments/
+#   ├── run_all.py
+#   └── NN_chapter/
+#       └── NN_section/
+#           └── 15-to-25-char-experiment-name/
+#               ├── experiment.py
+#               ├── experiment-idea.md
+#               ├── data_for_figure_dataclass.py  (optional)
+#               └── create_figure.py              (optional)
+
+root: ../experiments
+
+children:
+  - name_pattern: "^\\d{2}_chapter$"
+    type: directory
+    allow_empty: false
+    children:
+      - name_pattern: "^\\d{2}_section$"
+        type: directory
+        allow_empty: false
+        children:
+          - name_pattern: "^[a-z0-9-]{22,30}$"
+            type: directory
+            required_files:
+              - "experiment.py"
+              - "experiment-idea.md"
+              - "data_for_figure_dataclass.py"
+              - "create_figure.py"
+            allow_extra_files: false
+
+allowed_root_files:
+  - "run_all.py"

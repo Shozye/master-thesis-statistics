@@ -1,0 +1,8 @@
+**/__pycache__
+.mypy_cache
+data
+master-thesis-latex/
+generated_output/
+master_thesis_statistics.egg-info
+build
+.env

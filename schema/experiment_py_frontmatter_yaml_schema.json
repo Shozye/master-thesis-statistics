@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Experiment Frontmatter",
+  "type": "object",
+  "required": ["description"],
+  "additionalProperties": false,
+  "properties": {
+    "description": {
+      "type": "string",
+      "minLength": 50,
+      "maxLength": 200,
+      "description": "Short description of what the experiment does. Used to generate index.json."
+    }
+  }
+}

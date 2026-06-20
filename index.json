@@ -1,0 +1,146 @@
+[
+  {
+    "path": "experiments/03_chapter/02_section/expsketch-custom-float-perf/create_figure.py",
+    "description": "RSE comparison of FastExpSketchCustomFloat(p=7,q=8) vs ExpSketchFloat32 across Lambda range"
+  },
+  {
+    "path": "experiments/03_chapter/02_section/expsketch-custom-float-perf/experiment.py",
+    "description": "RSE comparison of FastExpSketchCustomFloat(p=7,q=8) vs ExpSketchFloat32 across Lambda range"
+  },
+  {
+    "path": "experiments/03_chapter/02_section/expsketch-float-lambda-range/experiment.py",
+    "description": "ExpSketch float register valid Lambda range and error by float type"
+  },
+  {
+    "path": "experiments/03_chapter/02_section/expsketch-jaccard-mantissa/experiment.py",
+    "description": "RSE of ExpSketch Jaccard similarity vs mantissa bits p for different exponent bits q"
+  },
+  {
+    "path": "experiments/03_chapter/02_section/expsketch-mantissa-accuracy/experiment.py",
+    "description": "ExpSketch accuracy vs mantissa bits p across log10(Lambda)"
+  },
+  {
+    "path": "experiments/03_chapter/02_section/expsketch-register-histogram/experiment.py",
+    "description": "ExpSketch register value histogram for custom float q=5 p=5"
+  },
+  {
+    "path": "experiments/03_chapter/02_section/float-formats-table-macheps/experiment.py",
+    "description": "Table of common IEEE 754 float formats with macheps and smallest positive value"
+  },
+  {
+    "path": "experiments/03_chapter/02_section/float-vs-qsketch-error-sweep/experiment.py",
+    "description": "Mean relative error vs Lambda for float types and QSketch bit widths"
+  },
+  {
+    "path": "experiments/03_chapter/04_section/qsketch-memory-analysis/experiment.py",
+    "description": "QSketch memory breakdown table comparing ExpSketchFloat32, FastExpSketchFloat32, QSketch(b=8) at m=100"
+  },
+  {
+    "path": "experiments/03_chapter/04_section/qsketch-memory-equivalence/experiment.py",
+    "description": "QSketch memory breakdown table at equal RSE (QSketch uses m=108 to match ExpSketch m=100)"
+  },
+  {
+    "path": "experiments/03_chapter/04_section/qsketch-register-distrib/experiment.py",
+    "description": "QSketch register value distribution histogram vs theoretical trimmed PMF"
+  },
+  {
+    "path": "experiments/03_chapter/05_section/memory-vs-rse-comparison/experiment.py",
+    "description": "Memory vs RSE comparison for QSketchDyn, QSketch, and WeightedHyperLogLogFloat32"
+  },
+  {
+    "path": "experiments/03_chapter/05_section/qsketchdyn-memory-analysis/experiment.py",
+    "description": "QSketchDyn performance table comparing memory and update time against ExpSketch and FastExpSketch at m=100 and m=400"
+  },
+  {
+    "path": "experiments/04_chapter/01_section/fisher-info-loss-ratio/experiment.py",
+    "description": "Fisher information loss ratio of k-QSketch vs ExpSketch for varying k and Lambda"
+  },
+  {
+    "path": "experiments/04_chapter/01_section/newton-graphic-iteration/experiment.py",
+    "description": "Newton-Raphson graphic iteration (cobweb) of the kQSketch MLE map, contrasting cold-start and warm-start convergence to the fixed point."
+  },
+  {
+    "path": "experiments/04_chapter/01_section/newton-vs-direct-estimator/experiment.py",
+    "description": "RSE comparison of kQSketch Newton-Raphson vs Direct estimator across Lambda and m"
+  },
+  {
+    "path": "experiments/04_chapter/01_section/newton-warm-cold-direct-time/experiment.py",
+    "description": "Estimation time and Newton iteration counts for Direct, Cold, and Warm vs m"
+  },
+  {
+    "path": "experiments/04_chapter/02_section/kqsketch-shifted-parameters/experiment.py",
+    "description": "RSE of kQSketchShifted with b=5 varying m (left) and varying k (right)"
+  },
+  {
+    "path": "experiments/04_chapter/02_section/kqsketch-shifted-reg-histos/experiment.py",
+    "description": "kQSketchShifted vs kQSketch register value distribution histograms"
+  },
+  {
+    "path": "experiments/04_chapter/02_section/kqsketch-shifted-rse-vs-k/experiment.py",
+    "description": "RSE of kQSketchShifted vs k for b={5,6,7}, m=400, Lambda=1, n=10"
+  },
+  {
+    "path": "experiments/04_chapter/02_section/kqsketch-shifted-rse-vs-lam/experiment.py",
+    "description": "kQSketchShifted vs kQSketch RSE across Lambda range for multiple bit widths"
+  },
+  {
+    "path": "experiments/04_chapter/03_section/kqsketch-rounding-accuracy/experiment.py",
+    "description": "RSE comparison of kQSketchRounding vs ExpSketch vs QSketch vs kQSketch across Lambda range"
+  },
+  {
+    "path": "experiments/04_chapter/04_section/expsketch-lns-register-hist/experiment.py",
+    "description": "LogExpSketch register value distribution histogram for varying Lambda and b"
+  },
+  {
+    "path": "experiments/04_chapter/04_section/expsketch-to-qsketch-ratio/experiment.py",
+    "description": "Total memory ratio of FastExpSketchCustomFloat(p=7,q=8) to QSketch(b=8) at equal RSE, swept over sketch size m."
+  },
+  {
+    "path": "experiments/04_chapter/04_section/logexpsketch-bits-float32/experiment.py",
+    "description": "LogExpSketchFastNoShifted cardinality RSE vs log10(Lambda) and Jaccard RSE vs bits b over the Float32 range"
+  },
+  {
+    "path": "experiments/04_chapter/04_section/logexpsketch-shifted-bits/experiment.py",
+    "description": "Shifted LogExpSketch cardinality RSE vs log10(Lambda) and Jaccard RSE vs bits b, where the sliding offset makes v_max a relative window width rather than an absolute range"
+  },
+  {
+    "path": "experiments/05_chapter/01_section/fastexpsketch-rng-comparison/experiment.py",
+    "description": "Mean addition time and mean relative error vs m for FastExpSketch across 4 RNG engines, combined into one figure with 2 subplots"
+  },
+  {
+    "path": "experiments/05_chapter/01_section/kqsketchshifted-rng-comparison/experiment.py",
+    "description": "Mean addition time and mean relative error vs m for kQSketchShifted across 4 RNG engines, combined into one figure with 2 subplots"
+  },
+  {
+    "path": "experiments/05_chapter/02_section/wce-update-time-vs-m-pareto/experiment.py",
+    "description": "Update time (microseconds) vs number of registers m for weighted cardinality estimation sketches"
+  },
+  {
+    "path": "experiments/05_chapter/03_section/wce-accuracy-industry-m/experiment.py",
+    "description": "RSE of mergeable weighted cardinality sketches at industry-standard m values"
+  },
+  {
+    "path": "experiments/05_chapter/04_section/memory-to-accuracy-sweep/experiment.py",
+    "description": "RSE vs total memory budget (512-4096 bytes) for five weighted cardinality sketches on a weighted stream, picking the largest m that fits each budget"
+  },
+  {
+    "path": "experiments/05_chapter/05_section/delta-method-variance-check/experiment.py",
+    "description": "Empirical RSE of kQSketch and kQSketchRounding direct estimators vs the delta-method variance guarantee, swept over m and over k"
+  },
+  {
+    "path": "experiments/06_chapter/01_section/euler-maclaurin-p10-bound/experiment.py",
+    "description": "Numerical evaluation of Euler-Maclaurin remainder bound at p=10 for Theta proof"
+  },
+  {
+    "path": "experiments/06_chapter/01_section/floor-secondmoment-em-bound/experiment.py",
+    "description": "Numerical evaluation of the Euler-Maclaurin remainder bound for the floor second-moment constant"
+  },
+  {
+    "path": "experiments/06_chapter/01_section/kqsketch-rounding-em-bound/experiment.py",
+    "description": "Numerical evaluation of the Euler-Maclaurin remainder bound for the kQSketchRounding dequantizer constant"
+  },
+  {
+    "path": "experiments/06_chapter/01_section/round-secondmoment-em-bound/experiment.py",
+    "description": "Numerical evaluation of the Euler-Maclaurin remainder bound for the rounding second-moment constant"
+  }
+]
